@@ -3,6 +3,6 @@ Exercises from the Udemy course:
 
 They will be updated as I work through the course and them.
 
-Support Doctor Yu:
-[X](https://x.com/yu_angela)
-[LinkenIn](https://www.linkedin.com/in/angela-yu-963a584b/)
+##Support Doctor Yu:
+#[X](https://x.com/yu_angela)
+#[LinkedIn](https://www.linkedin.com/in/angela-yu-963a584b/)
