@@ -9,9 +9,9 @@ nr_letters = int(input("How many letters would you like in your password?\n"))
 nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 
-# Attempts
+# Solutions
 # ---------------------------
-# Attempt 1
+# Solution 1
 # password = []
 #
 # for number in range(1, nr_letters + 1):
@@ -32,15 +32,35 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 #
 # print(scrambled_password)
 
-# Attempt 2
+# Solution 2
+# password_list = []
+#
+# for number in range(1, nr_letters + 1):
+#     password_list.append(letters[random.randint(0, len(letters) - 1)])
+# for number in range(1, nr_symbols + 1):
+#     password_list.append(symbols[random.randint(0, len(symbols) - 1)])
+# for number in range(1, nr_numbers + 1):
+#     password_list.append(numbers[random.randint(0, len(numbers) - 1)])
+#
+# random.shuffle(password_list)
+#
+# password = ""
+# for character in password_list:
+#     password += character
+#
+# print(f"Your password is: {password}")
+
+# Solution 3
 password_list = []
 
-for number in range(1, nr_letters + 1):
+for number in range(nr_letters):
     password_list.append(letters[random.randint(0, len(letters) - 1)])
-for number in range(1, nr_symbols + 1):
+for number in range(nr_symbols):
     password_list.append(symbols[random.randint(0, len(symbols) - 1)])
-for number in range(1, nr_numbers + 1):
+for number in range(nr_numbers):
     password_list.append(numbers[random.randint(0, len(numbers) - 1)])
+
+random.shuffle(password_list)
 
 password = ""
 for character in password_list:
